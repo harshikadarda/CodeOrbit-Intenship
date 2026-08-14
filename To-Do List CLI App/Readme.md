@@ -111,5 +111,3 @@ Choose an option (1-4): 4
 
 ## GitHub Repository Link
 [https://github.com/harshikadarda/CodeOrbit-Intenship](https://github.com/harshikadarda/CodeOrbit-Intenship)
-
-> Replace the link above with your actual repository URL once you push the project to GitHub.
