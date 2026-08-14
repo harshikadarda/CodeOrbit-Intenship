@@ -2,7 +2,6 @@
 
 A beginner-friendly command-line calculator written in Python. It performs basic arithmetic operations, validates user input, and gracefully handles errors like division by zero.
 
-Part of a **30 Days of Python Projects** series — Day 1.
 
 ---
 
