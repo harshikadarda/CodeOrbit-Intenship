@@ -1,4 +1,4 @@
-# Python Mini Projects — 4-Day Challenge
+# Python Programming
 
 A collection of four beginner-to-intermediate Python command-line applications, built one task per day. Each project is self-contained, uses only Python's standard library, and focuses on clean, well-commented, function-based code.
 
