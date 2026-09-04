@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="desk">
+
+  <header class="masthead">
+    <div class="masthead-text">
+      <h1>Contact Book</h1>
+      <p class="masthead-sub">Every name in one place, kept the old-fashioned way.</p>
+    </div>
+    <div class="masthead-stack" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search by name…" autocomplete="off">
+    </div>
+    <button id="newContactBtn" class="btn btn-primary">+ New contact</button>
+  </div>
+
+  <p id="statusMsg" class="status-msg" hidden></p>
+
+  <div id="cardGrid" class="card-grid"></div>
+
+  <div id="emptyMsg" class="empty-msg" hidden>
+    <p class="empty-title">No contacts yet</p>
+    <p class="empty-sub">Add your first one above to start filling the box.</p>
+  </div>
+
+</div>
+
+<!-- Add / Edit modal, styled as a blank index card to fill in -->
+<div id="modalOverlay" class="modal-overlay" hidden>
+  <form id="contactForm" class="index-card modal-card">
+    <div class="punch-hole"></div>
+    <h2 id="modalTitle">New contact</h2>
+
+    <label class="field">
+      <span class="field-label">Name</span>
+      <input type="text" id="fieldName" name="name" required>
+    </label>
+
+    <label class="field">
+      <span class="field-label">Phone</span>
+      <input type="text" id="fieldPhone" name="phone" placeholder="e.g. 98765 43210" required>
+    </label>
+
+    <label class="field">
+      <span class="field-label">Email <em>(optional)</em></span>
+      <input type="email" id="fieldEmail" name="email" placeholder="name@example.com">
+    </label>
+
+    <p id="formError" class="form-error" hidden></p>
+
+    <div class="modal-actions">
+      <button type="button" id="cancelBtn" class="btn btn-ghost">Cancel</button>
+      <button type="submit" class="btn btn-primary" id="saveBtn">Save contact</button>
+    </div>
+  </form>
+</div>
+
+<!-- Delete confirmation -->
+<div id="confirmOverlay" class="modal-overlay" hidden>
+  <div class="index-card confirm-card">
+    <div class="punch-hole"></div>
+    <h2>Remove this contact?</h2>
+    <p id="confirmText" class="confirm-text"></p>
+    <div class="modal-actions">
+      <button type="button" id="confirmCancelBtn" class="btn btn-ghost">Keep it</button>
+      <button type="button" id="confirmDeleteBtn" class="btn btn-danger">Remove</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
