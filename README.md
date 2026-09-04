@@ -125,9 +125,3 @@ python contact_book.py
 ## GitHub Repository Link
 
 [https://github.com/harshikadarda/CodeOrbit-Intenship](https://github.com/harshikadarda/CodeOrbit-Intenship)
-
-> Replace `<your-username>` (and the clone URL above) with your actual GitHub username/repository once this project is pushed.
-
-## Author
-
-Built as a 4-day, one-task-per-day Python practice challenge.
