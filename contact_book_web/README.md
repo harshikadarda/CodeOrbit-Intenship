@@ -91,7 +91,5 @@ contact_book_web/
 
 ## GitHub Repository Link
 
-`<ADD_YOUR_GITHUB_REPO_LINK_HERE>`
+[https://github.com/harshikadarda/CodeOrbit-Intenship](https://github.com/harshikadarda/CodeOrbit-Intenship)
 
----
-*This is Task 4 of a series of daily Python practice tasks (one task completed per day).*
